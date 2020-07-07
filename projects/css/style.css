@@ -1,0 +1,274 @@
+.modal{
+	z-index: 20;
+}
+.title{
+	color: white;
+	padding-left: 3%;
+	margin: 10px;
+}
+footer{
+	background-color: black;
+	color: white;
+}
+.fa{
+	margin-left: 10px;
+}
+.active{
+	border-bottom: 2px solid white;
+}
+#prototype img{
+	margin: 5px;
+	width: 100%;
+	align-items: center;
+}
+#workflow img{
+	width: 100%;
+}
+body{
+	background-image: url('../images/projects.jpg');
+	background-size: 100% 100%;
+	background-clip: initial;
+}
+.projects{
+  max-width: 100%;
+  margin-top: 15%;
+}
+.projects img{
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+.projects p{
+  padding: 10px;
+  color: #696969;
+}
+.projects h4{
+  font-weight: bold;
+  color:#3786bd;
+  padding: 15px;
+  text-align: center;
+}
+#title{
+  text-align: center;
+}
+.logo img{
+	border-radius: 50px;
+	width: 70px;
+	height: 70px;
+}
+html{
+	margin: 0;
+}
+body{
+	padding:0;
+	margin:0;
+	/* background:#3786bd; */
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+	padding:0;
+}	
+p{
+	margin:0;
+	padding:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+button{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+.nav>li>a {
+	font-size:20px;
+	font-weight:300;
+	padding:10px 30px;
+	line-height:30px;
+	color:#fff!important 
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background-color:transparent;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar {
+	margin-bottom:0;
+}
+.navbar-nav {
+	margin-top: 50px;
+}
+.navbar-brand{
+	margin-top: 30px;
+}
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px); 
+	transform: translateY(0px);
+}
+
+.large-header {
+	position: relative;
+	width: auto;
+	overflow: hidden;
+	background-size: cover; 
+	background-position: center; 
+	z-index: 1;
+ }
+
+ .main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #F9F1E9;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+ }
+ 
+ .demo .main-title {
+	font-size: 5em;
+	letter-spacing: 0.1em;
+ }
+
+@media (min-width: 1100px){
+  .projects{
+    margin-top: 10%;
+  }
+ }
+@media (max-width: 1280px) {
+.nav>li>a {
+    padding: 10px 20px;
+	font-size:18px;
+}
+.navbar-nav {
+	margin-top: 50px;
+  }
+.navbar-brand{
+	margin-top: 30px;
+  }
+}
+
+@media (max-width: 990px) {
+  #modal{
+    margin-top: 10%;
+  }
+  .projects{
+    margin-top: 15%;
+  }
+	.nav>li>a {
+		padding: 10px 10px;
+		font-size:18px;
+	}
+	.navbar-nav {
+		margin-top: 50px;
+	  }
+	.navbar-brand{
+		margin-top: 30px;
+	  }
+	}
+
+ @media (max-width: 768px) {
+	body{
+		background-image: url('../images/projects.jpg');
+		background-size: contain;
+	}	
+	.logo img{
+		width: 50px;
+		height: 50px;
+		}
+	.navbar-brand{
+		margin-top: 0;
+		}
+	.demo .main-title {
+		font-size: 1.5em;
+		}
+	.main-title {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		color: #F9F1E9;
+		text-align: center;
+		top: 30%;
+		left: 43%;
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		transform: translate3d(-50%, -50%, 0);
+	 }
+	 .saac{
+		width: 120%;
+	 }
+	.demo .main-title {
+		font-size: 3em;
+		letter-spacing: 0.1em;
+	 }
+ }
